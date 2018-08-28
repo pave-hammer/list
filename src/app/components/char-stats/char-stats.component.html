@@ -1,0 +1,93 @@
+<div class="char-container">
+  <input type="text" placeholder="Character Name">
+    <div class="charinfo-container"><br>
+      <input class="charinputs" type="text" placeholder="Class & Level">
+      <input class="charinputs" type="text" placeholder="Background">
+      <input class="charinputs" type="text" placeholder="Player Name">
+      <input class="charinputs" type="text" placeholder="Race">
+      <input class="charinputs" type="text" placeholder="Alignment">
+      <input class="charinputs" type="text" placeholder="Experience Points">
+    </div>
+</div><br>
+<div class="stat-container">
+    <input class="statinputs" type="text" placeholder="STR" 
+      [(ngModel)]="_statMod.rawCharStat[0]">Mod: {{_statMod.modifierResult[0]}}<br>
+
+    <input class="statinputs" type="text" placeholder="DEX" 
+      [(ngModel)]="_statMod.rawCharStat[1]">Mod: {{_statMod.modifierResult[1]}}<br>
+
+    <input class="statinputs" type="text" placeholder="CON" 
+      [(ngModel)]="_statMod.rawCharStat[2]">Mod: {{_statMod.modifierResult[2]}}<br>
+
+    <input class="statinputs" type="text" placeholder="INT" 
+      [(ngModel)]="_statMod.rawCharStat[3]">Mod: {{_statMod.modifierResult[3]}}<br>
+
+    <input class="statinputs" type="text" placeholder="WIS" 
+      [(ngModel)]="_statMod.rawCharStat[4]">Mod: {{_statMod.modifierResult[4]}}<br>
+
+    <input class="statinputs" type="text" placeholder="CHA" 
+      [(ngModel)]="_statMod.rawCharStat[5]">Mod: {{_statMod.modifierResult[5]}}<br>
+      
+    <button type="submit" class="btn" (click)="addStats()">Submit</button>
+</div>
+<div class="adds-container">
+  <div class="skills-container">
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="DEX"> Acrobatics<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="WIS"> Animal Handling<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="INT"> Arcana<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="STR"> Athletics<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="CHA"> Deception<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="INT"> History<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="WIS"> Insight<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="CHA"> Intimidation<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="INT"> Investigation<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="WIS"> Medicine<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="INT"> Nature<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="WIS"> Perception<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="CHA"> Performance<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="CHA"> Persuasion<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="INT"> Religion<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="DEX"> Sleight of Hand<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="DEX"> Stealth<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="WIS"> Survival<br>
+    <span class="center-text">Skills</span>
+  </div>
+</div>
+<div class="adds-2-container">
+  <input class="inspiration" type="text" placeholder="Inspiration"><br>
+  <input class="proficiency" type="text" placeholder="Proficiency Bonus"
+    [(ngModel)]="_statMod.profBonus"><br>
+  <div class="savthrow-container">
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="STR"> Strength<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="DEX"> Dexterity<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="CON"> Constitution<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="WIS"> Wisdom<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="INT"> Intelligence<br>
+    <input type="radio">
+      <input class="savthrow-inputs" type="text" placeholder="CHA"> Charisma<br>
+    <span class="center-text">Saving Throws</span>
+  </div>
+</div>
