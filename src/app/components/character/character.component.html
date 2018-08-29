@@ -1,0 +1,19 @@
+<p>
+  character works!
+</p>
+
+<div class="stat-container">
+  <input type="text" name="setStr" placeholder="Strength" class="stat-input" 
+    [(ngModel)]="_modCalc.setStrength"> Mod: {{_modCalc.modifiers[0]}}<br>
+  <input type="text" name="setDex" placeholder="Dexterity" class="stat-input" 
+    [(ngModel)]="_modCalc.setDexterity"> Mod: {{_modCalc.modifiers[1]}}<br>
+  <input type="text" name="setCon" placeholder="Consitution" class="stat-input" 
+    [(ngModel)]="_modCalc.setConstitution"> Mod: {{_modCalc.modifiers[2]}}<br>
+  <input type="text" name="setInt" placeholder="Intelligence" class="stat-input" 
+    [(ngModel)]="_modCalc.setIntelligence"> Mod: {{_modCalc.modifiers[3]}}<br>
+  <input type="text" name="setWis" placeholder="Wisdom" class="stat-input" 
+    [(ngModel)]="_modCalc.setWisdom"> Mod: {{_modCalc.modifiers[4]}}<br>
+  <input type="text" name="setCha" placeholder="Charisma" class="stat-input" 
+    [(ngModel)]="_modCalc.setCharisma"> Mod: {{_modCalc.modifiers[5]}}<br>
+  <button type="submit" (click)="_modCalc.setStats()">Submit</button>
+</div>
