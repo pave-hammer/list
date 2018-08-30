@@ -1,0 +1,7 @@
+
+<div class="stat-container" *ngFor="let stat of _modifierSerivce.stat">
+  <input type="text" [placeholder]=stat.ability [(ngModel)]="stat.abilityStat"> 
+  Mod: {{_modifierSerivce.getModifier(stat) | round}}
+</div>
+
+

@@ -3,20 +3,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { CharacterComponent } from './components/char-stats/char-stats.component';
-
-import { StatService } from './services/stat.service';
+import { CharacterSheetComponent } from './components/character-sheet/character-sheet.component';
+import { RoundPipe } from './services/modifier.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharacterComponent
+    CharacterSheetComponent,
+    RoundPipe
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [StatService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
